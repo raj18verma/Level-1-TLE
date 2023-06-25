@@ -1,0 +1,15 @@
+//Question Link:- https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/F
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int var;
+    cin>>var;
+    
+    for(int i=1; i<=12; i++){
+        cout<<var<<" * "<<i<<" = "<<var*i<<endl;
+    }
+    return 0;
+}
