@@ -1,0 +1,23 @@
+// Question Link:- https://codeforces.com/group/MWSDmqGsZm/contest/326907/problem/D
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    
+    int t;
+    cin>>t;
+    
+    for(int i=0; i<t; i++){
+    long long int a,b;
+    cin>>a>>b;
+    long long maxi=max(a,b);
+    long long mini=min(a,b);
+    long long sum = (((maxi*(maxi+1))/2) - ((mini*(mini+1))/2)) + mini;
+    
+    cout<<sum<<endl;
+    }
+    
+    return 0;
+}
