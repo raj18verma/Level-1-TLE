@@ -1,0 +1,28 @@
+// Question Link:- https://codeforces.com/problemset/problem/734/A
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+       
+    int n, anton = 0, dainik = 0;
+    char c;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> c;
+        if (c == 'A')
+            anton++;
+        else
+            dainik++;
+    }
+    if (dainik > anton) {
+        cout << "Danik" << endl;
+    } else if (anton > dainik) {
+        cout << "Anton" << endl;
+    } else {
+        cout << "Friendship" << endl;
+    }
+       
+       return 0;
+}
