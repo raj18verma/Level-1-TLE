@@ -1,0 +1,20 @@
+// Question Link:- https://codeforces.com/problemset/problem/1/A
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+       
+       long long int n,m,a;
+       cin>>n>>m>>a;
+       
+       n=n/a + (n%a!=0);
+       m=m/a + (m%a!=0);
+       
+       cout<<n*m;
+       
+       return 0;
+}
+
+
+// yt video for explanation :- https://www.youtube.com/watch?v=BKrYh08Sqv0
