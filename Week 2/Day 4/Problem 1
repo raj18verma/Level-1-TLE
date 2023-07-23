@@ -1,0 +1,31 @@
+// Problem Link:- https://codeforces.com/problemset/problem/1343/B
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+       long long t;
+       cin>>t;
+       while(t--){
+              long long n;
+              cin>>n;
+              if((n/2)%2!=0){
+                     cout<<"NO"<<endl;
+              }else{
+                     cout<<"YES"<<endl;
+                     long long j=2;
+                     for(long long i=1; i<=n/2; i++){
+                            cout<<j<<" ";
+                            j=j+2;
+                     }
+                     long long val=j-2;
+                     j=1;
+                     for(long long i=1; i<n/2; i++){
+                            cout<<j<<" ";
+                            j=j+2;
+                     }
+                     cout<<val+n/2-1<<endl;
+              }
+       }
+       return 0;
+}
