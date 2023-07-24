@@ -24,3 +24,6 @@ int main(){
 }
        return 0;
 }
+
+
+// yt link:- https://youtu.be/CjJoLnrMfso
